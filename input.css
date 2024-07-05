@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  body {
+    @apply font-sans bg-slate-100 m-0 flex flex-col items-center;
+  }
+  .weatherForm {
+    @apply m-5;
+  }
+  .cityInput {
+    @apply p-2.5 text-4xl font-bold border-2 border-solid border-slate-200 rounded-lg m-2.5 w-80;
+  }
+  button[type="submit"] {
+    @apply py-2.5 px-5 font-bold text-4xl text-white bg-green-600 border-none rounded-md cursor-pointer;
+  }
+  button[type="submit"]:hover {
+    @apply bg-green-500;
+  }
+  .card {
+    @apply bg-gradient-to-b from-cyan-300 to-amber-300 flex flex-col items-center p-14 min-w-80 shadow-md shadow-slate-500;
+  }
+  h1 {
+    @apply mt-0 mb-6;
+  }
+  p {
+    @apply text-2xl mx-0 my-1.5;
+  }
+  .cityDisplay,
+  .tempDisplay {
+    @apply text-6xl font-bold text-zinc-800 mb-6;
+  }
+  .humidityDisplay {
+    @apply font-bold mb-6;
+  }
+  .descDisplay {
+    @apply italic font-bold text-4xl;
+  }
+  .weatherEmoji {
+    @apply m-0 text-8xl;
+  }
+  .errorDisplay {
+    @apply text-4xl font-bold text-slate-800;
+  }
+}
