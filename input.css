@@ -19,7 +19,7 @@
     @apply bg-green-500;
   }
   .card {
-    @apply bg-gradient-to-b from-cyan-300 to-amber-300 flex flex-col items-center p-14 min-w-80 shadow-md shadow-slate-500;
+    @apply bg-gradient-to-b from-cyan-300 to-amber-300 rounded-lg flex flex-col items-center p-14 min-w-80 shadow-md shadow-slate-500;
   }
   h1 {
     @apply mt-0 mb-6;
